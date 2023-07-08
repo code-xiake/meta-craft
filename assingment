@@ -1,0 +1,47 @@
+// SPDX-License-Identifier:MIT
+pragma solidity ^0.8.17;
+
+contract Crafters {
+    uint Num;
+    bool Lie;
+    address House;
+    string Word;
+
+
+    function SetNumber(uint _Num) public {
+        Num = _Num;
+        
+    }
+
+    function SetBool (bool _Lie) public {
+        Lie = _Lie ;
+    }
+
+    function SEtAddress (address _House ) public {
+        House = _House ;
+    }
+
+    function SetString (string memory  _word) public {
+        Word = _word ;
+    }
+ 
+
+    function getNum () public view returns (uint) {
+        return Num;
+    }
+
+    function getBool () public view returns (bool) {
+        return Lie;
+    }
+
+    function getAddress () public view returns (address) {
+        return House;
+    }
+
+
+    function getString () public view returns (string memory ) {
+       return Word ; 
+    }
+
+
+}
