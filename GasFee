@@ -1,0 +1,19 @@
+//  SPDX-License-Identifier:MIT
+
+pragma solidity 0.8.17;
+
+contract gasFee {
+    uint  Amount = 4 ;
+    uint newAmount ;
+
+    function addAmount (uint _amount) public {
+        Amount += _amount;
+        newAmount = Amount;
+        require (newAmount <= 10, "amount is too much");
+    }
+    
+    function getAmount () public view returns (uint) {
+        return newAmount;
+    }
+
+}
